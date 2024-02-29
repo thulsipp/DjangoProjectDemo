@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<h1>Home Page</h1>
+{% endblock %}
+<h1>Library app</h1>
+<a href="{% url 'books:home' %}">Link to Home Page</a><br>
+<a href="{% url 'books:add' %}">Link to Addbooks Page</a><br>
+<a href="{% url 'books:views' %}">Link to Viewbooks Page</a><br>
+<a href="{% url 'students:rgr' %}">Link to Register Page</a><br>
+<a href="{% url 'students:log' %}">Link to Login Page</a><br>
